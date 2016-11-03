@@ -132,3 +132,17 @@ gem install bundler
 You should now be ready to follow the very simple instructions for 
 installing [CMock](https://github.com/ThrowTheSwitch/CMock/blob/master/README.md) 
 or [Ceedling](https://github.com/ThrowTheSwitch/Ceedling/blob/master/README.md)
+
+### CMock
+~~~ sh
+$ git clone --recursive https://github.com/throwtheswitch/cmock.git # clone CMock and all sub-repos
+$ cd cmock
+$ bundle install # Ensures you have all RubyGems needed
+$ bundle exec rake # Run all CMock library tests
+~~~
+
+### Ceedling
+~~~ sh
+$ gem install ceedling
+~~~
+~~~
