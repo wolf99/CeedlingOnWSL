@@ -145,4 +145,3 @@ $ bundle exec rake # Run all CMock library tests
 ~~~ sh
 $ gem install ceedling
 ~~~
-~~~
