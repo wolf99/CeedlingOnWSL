@@ -1,4 +1,4 @@
-# CeedlingOnWSL
+# Ceedling On Windows Subsystem for Linux (WSL)
 How to install 
 [Ceedling](https://github.com/ThrowTheSwitch/Ceedling/blob/master/README.md) 
 or [CMock](https://github.com/ThrowTheSwitch/CMock/blob/master/README.md) 
@@ -17,16 +17,21 @@ I have tried using RVM but suffered defeat in permissions hell.
   your shell initialization files before installing rbenv.
   
 ## Before beginning ##
-where I say restart the terminal I mean exit from bash and exit from
+Where I say restart the terminal I mean exit from bash and exit from
 the terminal also. I have found that sometimes only an exit from bash 
 is required but this appears inconsistent and it makes for a smoother 
 install to take every precaution!
 
 ## To Begin ##
 If you have already installed Ruby I would recommend uninstalling it. 
-This step is not required but reduceses potential problems as all the 
+This step is not required but reduces potential problems as all the 
 Rubys installed on a system are relative to the same location (i.e. 
-rbenv). You can do this with a simple `$ sudo apt-get purge ruby`. 
+rbenv). You can do this with a simple 
+
+~~~ sh
+$ sudo apt-get purge ruby
+~~~
+
 Then make sure any mentions of Ruby in `~/.bash_profile`, `~/.bashrc` 
 and so on are removed also. 
 
@@ -93,9 +98,11 @@ $ rbenv install 2.3.1
 ~~~
 
 ## Selecting a Ruby version for use ##
-See the currently installed Ruby versions using `$ rbenv versions`
-See the currently selected Ruby version using `$ rbenv version`
-Change the selected version using `$ rbenv local [version]`
+See the currently installed Ruby versions using `$ rbenv versions`.
+
+See the currently selected Ruby version using `$ rbenv version`.
+
+Change the selected version using `$ rbenv local [version]`.
 
 ## Running Ruby when bash starts ##
 To have a Ruby version shell selected and running when bash starts:
@@ -104,11 +111,15 @@ To have a Ruby version shell selected and running when bash starts:
 $ echo 'rbenv local [version]' >> ~/.bashrc
 ~~~
 
-Then restart the terminal. check Ruby is running by typing `$ Ruby`
+Then restart the terminal. Check Ruby is running by typing `$ Ruby`
 
 ## Make sure permissions for gems are correct
 rbenv seems to leave permissions on it's directory world-writable, which 
-Ruby will constantly warn you about. To fix this use `$ chmod -R go-w ~/.rbenv`
+Ruby will constantly warn you about. To fix this use 
+
+~~~ sh
+$ chmod -R go-w ~/.rbenv
+~~~
 
 ## Install Bundler
 Install bundler using:
