@@ -1,4 +1,4 @@
-# Ceedling On Windows Subsystem for Linux (WSL)
+# Install Ceedling Or CMock On Windows Subsystem for Linux (WSL)
 How to install 
 [Ceedling](https://github.com/ThrowTheSwitch/Ceedling/blob/master/README.md) 
 or [CMock](https://github.com/ThrowTheSwitch/CMock/blob/master/README.md) 
