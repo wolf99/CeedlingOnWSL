@@ -40,48 +40,8 @@ After doing this restart your terminal.
 ## Installing rbenv 
 rbenv has a simple install process on it's github repo 
 [readme.md](https://github.com/rbenv/rbenv/blob/master/README.md). 
-The steps I used from this are outlined below:
 
-1. Check out rbenv into `~/.rbenv`.
-
-    ~~~ sh
-    $ git clone https://github.com/rbenv/rbenv.git ~/.rbenv
-    ~~~
-
-    Optionally, try to compile dynamic bash extension to speed up rbenv. 
-    Don't worry if it fails; rbenv will still work normally:
-
-    ~~~
-    $ cd ~/.rbenv && src/configure && make -C src
-    ~~~
-
-2. Add `~/.rbenv/bin` to your `$PATH` for access to the `rbenv`
-   command-line utility.
-
-    ~~~ sh
-    $ echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.bashrc
-    ~~~
-
-    **Zsh note**: Modify your `~/.zshrc` file instead of `~/.bashrc`.
-
-3. Add the following to your `~/.bashrc` to initialize rbenv to enable 
-   shims and autocompletion.
-   
-   ~~~ sh
-   $ echo 'eval "$(rbenv init -)"' >> ~/.bashrc
-   ~~~
-
-4. Restart your terminal so that PATH changes take effect. Now check 
-   if rbenv was set up:
-
-    ~~~ sh
-    $ type rbenv
-    #=> "rbenv is a function"
-    ~~~
-
-5.  Install [ruby-build](https://github.com/rbenv/ruby-build#readme), 
-    which provides the `rbenv install` command that simplifies the 
-    process of installing new Ruby versions.
+See: https://github.com/rbenv/rbenv#basic-github-checkout
     
 ### Installing a version of Ruby ##
 The `rbenv install` command doesn't ship with rbenv out of the box, but
